@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    width: 100%;
+    height: 100%;
+}
+.conteiner {
+    width: 100%;
+    max-width: 1200px;
+}
+.header_inner {
+    width: 100%;
+    -webkit-box-shadow: 8px 20px 15px 2px rgba(0,0,0,0.76); 
+    box-shadow: 8px 20px 15px 2px rgba(0,0,0,0.76);
+}
+.top {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid black;
+}
+.logo_top a {
+    text-decoration: none;
+    font-size: 40px;
+    color: brown;
+    font-family: 'Mochiy Pop One', sans-serif;
+
+}
+.menu_top a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    margin-left: 15px;
+    transition: all 0.2s;
+}
+.menu_top a:hover {
+    border-bottom: 1px solid cadetblue;
+    color: cadetblue;
+}
+.text_header {
+    width: 100%;
+    height: 90%;
+    text-align: center;
+    padding: 100px 0;
+}
+.text_header h1 {
+    color: black;
+    font-size: 50px;
+    font-family: 'Mochiy Pop One', sans-serif;
+
+}
+.text_header p {
+    color: black;
+    font-size: 25px;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+span {
+    color: brown;
+}
+.header_knopka {
+    width: 100%;
+    height: 30%;
+    margin-top: 60px;
+}
+.knopka {
+    background-color: rgb(117, 45, 18);
+    color: white;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 20px 60px;
+}
+.knopka:hover {
+    background-color: rgb(0, 81, 255);
+    color: white;
+    -webkit-box-shadow: 6px 9px 23px 11px rgba(21,127,255,0.76); 
+    box-shadow: 6px 9px 23px 11px rgba(21,127,255,0.76);
+}
+.main {
+    width: 100%;
+    height: 100%;
+}
+.main_inner {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    -webkit-box-shadow: 8px 20px 15px 2px rgba(0,0,0,0.76); 
+    box-shadow: 8px 20px 15px 2px rgba(0,0,0,0.76);
+}
+.sidebar {
+    width: 250px;
+    height: 630px;
+    background-color: rgb(117, 45, 18);
+    border-radius: 0 25px 25px 0;
+}
+.sidebar div {
+    width: 120px;
+    border-bottom: 2px solid black;
+    text-align: end;
+    margin-top: 30px;
+}
+.sidebar a {
+    text-decoration: none;
+    font-size: 20px;
+    color:white;
+
+}
+.content {
+    width: 950px;
+    height: 630px;
+    display: flex;
+    align-items: center;
+}
+.info {
+    width: 600px;
+    height: 300px;
+    background: url(./img/kosmonavt_skafandr_raznotsvetnyj_123724_3840x2160.jpg);
+    background-size: cover;
+    border-radius: 25px;
+    padding: 100px 80px;
+}
+.knopka_2 {
+    background-color: rgba(199, 199, 199, 0.5);
+    color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 20px 50px;
+}
+.knopka_2:hover {
+    background-color: rgb(0, 81, 255);
+    color: white;
+    -webkit-box-shadow: 6px 9px 23px 11px rgba(21,127,255,0.76); 
+    box-shadow: 6px 9px 23px 11px rgba(21,127,255,0.76);
+}
+input{
+    position: absolute;
+    top: -100px;
+}
+input:checked + .global{
+    background: linear-gradient(45deg, black,yellow,red, black, blue 93%);
+}
+input:checked + .global .header .header_inner {
+    border: 2px solid white;
+}
+input:checked + .global .header .top .menu_top a {
+    color: white;
+}
+input:checked + .global .header .header_inner .text_header h1{
+    color: white;
+} 
+input:checked + .global .header .header_inner .text_header p{
+    color: white;
+} 
+input:checked + .global .header .header_inner {
+    background: url(./img/xK.gif) no-repeat;
+    background-size: 100%;
+}
+input:checked + .global .main .main_inner {
+    background-color: rgba(117, 82, 58, 0.616);
+}
+input::before {
+    content:"";
+    width: 50px;
+    height: 50px;
+    background: url(./img/fxk4.gif);
+    background-size: cover;
+    /* background-color: black; */
+    border-radius: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 93%;
+    top: 10px;
+}
